@@ -4,10 +4,10 @@
     {
         static void Main(string[] args)
         {
-            int[] scores = { 90, 85, 70, 95, 80, 65, 55 };
+            int[] scores = { 90, 85, 55, 100, 80, 65, 70 };
 
             //selection sort
-            for (int i = 0;i > scores.Length; i++)
+            for (int i = 0; i < scores.Length - 1; i++)
             {
                 int lowestScore = i;
 
@@ -15,7 +15,7 @@
                 {
                     if (scores[j]< scores[lowestScore])
                     {
-                        lowestScore = scores[j];
+                        lowestScore = j;
                     }
                 }
                 int temp = scores[i];
